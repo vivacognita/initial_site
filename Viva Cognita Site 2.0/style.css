@@ -1,12 +1,21 @@
 /*
 
- ---------------------------------------------------
+Theme Name: Viva Cognita
 
-|NOTE: This style sheet leverages: layout-core.css. |
+Theme URI: http://www.math.bas.bg
 
- ---------------------------------------------------
+Author: Todor Branzov
+
+Author URI: http://vedena.net
+
+Description: Theme for Viva Cognita virtual community site
+
+Version: 2.0
+
+Tags:virtual community, mathematics, informatics, computer science, IT
 
 */
+
 
 @import url(layout-core.css);
 /*------------------TYPOGRAPHY -------------------*/
@@ -101,10 +110,7 @@ p {
 
 /*main background colorscheme*/
 
-.bg-home{
-	background: #F8821B url('../images/page.jpg') no-repeat scroll;
-	background-position: center top;
-}
+
 
 .bg-secondary{
   background-color: #666;
@@ -199,13 +205,17 @@ p {
 	float:left;
 }
 
+.clr-both{
+	clear:both;
+}
+
 /* Different Screen sizes */
 
 @media (min-width: 1220px) {
 
 	#mainHeadContainer{
 	margin: 0 auto;
-	width: 960px;
+	width: 1000px;
 	height: 64px;
 	}
   
@@ -217,12 +227,18 @@ p {
 	}
 	
 	#mainNav{
-	width: 960px;
+	width: 1000px;
 	background: #0D7E93;
 	margin: 0 auto;
 	position: relative;
 	z-index: 499;
 	}
+
+	div#sheet, div#grid, div#mainFooterContainer {
+	margin: 0 auto;
+	position: relative;
+	width:1000px;
+}
 
 }
 

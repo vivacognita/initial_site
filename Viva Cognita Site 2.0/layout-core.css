@@ -7,17 +7,18 @@ header{
 
     margin: 0 auto;
     background-repeat: no-repeat;
-    height: 64px;
+    height:64px;
     position: relative;
-    background-image: url('../images/header.jpg');
+    background-image: url('images/header.jpg');
     background-position: center top;
 
 }
 
 div.logo{
-    width: 200px;
+    width:200px;
     float: left;
-	line-height: 64px;
+	line-height:64px;
+	margin-left:10px;
 }
 
 /* Main Menu*/
@@ -68,12 +69,16 @@ div.logo{
 
 /* Main Menu END*/
 
+div#hdrRight{
+	min-width:327px;
+}
+
 /* Social Menu*/
 div .mnuTopSoc
 {
 	margin:0;
 	padding:0;
-	display: inline-block;
+	display:block;
 	height: 64px;
 }
 
@@ -83,7 +88,7 @@ div .mnuTopSoc
     margin:0;
     padding:0;
     overflow:hidden;
-    display: inline-block;
+    display:block;
 }
 
 #mnuTopSoc li
@@ -166,6 +171,11 @@ div .mnuTopSoc
 
 }/*for a stretched bottom only*/
 
+.ftrAck{
+	text-align:center;
+	color:#FFFFFF;
+	padding-top: 20px;
+}
 
 h2.thisMonth{
 
