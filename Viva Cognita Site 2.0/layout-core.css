@@ -1,5 +1,4 @@
 /* Default CSS */
-@import url(reset.css);
 
 /*------------------ STANDARD STYLING -------------------*/
 
@@ -162,49 +161,8 @@ div .mnuTopSoc
 
 /* Top Menu END*/
 
-
-#across{
-
- margin: 0;
-
- width:100%;
-
-}/*for a stretched bottom only*/
-
 .ftrAck{
 	text-align:center;
 	color:#FFFFFF;
 	padding-top: 20px;
-}
-
-h2.thisMonth{
-
- font-size: 260%;
-
-}
-
-.content{
-
- margin-top: 250px;
-
-}
-
-.sidebar{
-
- margin-top: 150px;
-
-}
-
-.sidebar div{
-
- margin-top: 30px;
-
- padding-bottom: 10px;
-
-}
-
-.sidebar h2{
-
- margin-left:20px;
-
 }

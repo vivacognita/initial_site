@@ -16,9 +16,388 @@ Tags:virtual community, mathematics, informatics, computer science, IT
 
 */
 
+/* `XHTML, HTML4, HTML5 Reset
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@import url(layout-core.css);
-/*------------------TYPOGRAPHY -------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block;
+}
+
+b,
+strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+/*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+/*
+  For IE6 + IE7:
+
+  "display: list-item" keeps bullets from
+  disappearing if hasLayout is triggered.
+*/
+  display: list-item;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg {
+/*
+  For IE9. Without, occasionally draws shapes
+  outside the boundaries of <svg> rectangle.
+*/
+  overflow: hidden;
+}
+
+/*-------------------------------------------------------------------------- STANDARD STYLING ---------------------------------------------------------*/
+
+header{
+
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height:64px;
+    position: relative;
+    background-image: url('images/header.jpg');
+    background-position: center top;
+
+}
+
+div.logo{
+    width:200px;
+    float: left;
+	line-height:64px;
+	margin-left:10px;
+}
+
+/* Main Menu*/
+#mainNav ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mainNav li
+{
+    position: relative;
+    z-index: 5;
+    display: block;
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#mainNav a{
+    display: block;
+    text-align: left;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin: 0 auto;
+    padding: 0 17px;
+    color: #FFFFFF;
+    line-height: 34px;
+}
+
+#mainNav a:hover
+{
+    background-color: #FA681E;
+    color: #FFF5F0;
+}
+
+/* Main Menu END*/
+
+div#hdrRight{
+	min-width:327px;
+}
+
+/* Social Menu*/
+div .mnuTopSoc
+{
+	margin:0;
+	padding:0;
+	display:block;
+	height: 64px;
+}
+
+#mnuTopSoc ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display:block;
+}
+
+#mnuTopSoc li
+{
+	display: block;   
+	background: none;
+	width: 66px;
+	height: 64px;
+	float: left;
+}
+
+#mnuTopSoc a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    margin: 0 auto;
+}
+
+#mnuTopSoc a:hover
+{
+    background-color: #FFFFFF;
+}
+
+/* Social Menu END*/
+
+/* Top Menu*/
+ div .mnuTop
+{
+	margin:0;
+	padding:0;
+	display:block;
+	float:left;
+}
+
+#mnuTop ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display: inline-block;
+}
+
+#mnuTop li
+{
+	display: block;   
+	background: none;
+	line-height: 60px;
+	float: left;
+}
+
+#mnuTop a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    text-transform:uppercase;
+	color: #0D7E93;
+	padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+#mnuTop a:hover
+{
+	color: #FA681E;
+} */
+
+/* Top Menu END*/
+
+.ftrAck{
+	text-align:center;
+	color:#FFFFFF;
+	padding-top: 20px;
+}
+
+/*-----------------------------------------------------------------------------------TYPOGRAPHY ----------------------------------------------------------------------------------*/
 
 /*
 
@@ -106,7 +485,7 @@ p {
 }
 
 
-/*------------------REUSABLE GRAPHIC TREATMENTS -------------------*/
+/*--------------------------------------------------------------------------------------REUSABLE GRAPHIC TREATMENTS ----------------------------------------------------------------------*/
 
 /*main background colorscheme*/
 
@@ -209,7 +588,7 @@ p {
 	clear:both;
 }
 
-/* Different Screen sizes */
+/* ---------------------------------------------------------------------------Different Screen sizes ------------------------------------------------------------------------*/
 
 @media (min-width: 1220px) {
 
