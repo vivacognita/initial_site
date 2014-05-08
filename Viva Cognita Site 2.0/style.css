@@ -18,7 +18,6 @@ Tags:virtual community, mathematics, informatics, computer science, IT
 
 /* `XHTML, HTML4, HTML5 Reset
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 a,
 abbr,
 acronym,
@@ -119,6 +118,13 @@ html,
 body {
   height: 100%;
 }
+
+body {
+ font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+ font-size: 0.9em;
+ color: #333;
+}
+
 
 article,
 aside,
@@ -402,11 +408,6 @@ Assign default colors only. Otherwise color is handled at BOTTOM of sheet.
 
 */
 
-body {
- font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
- font-size: 0.9em;
- color: #333;
-}
 
 h1, h2, h3, h4, h5, h6 {
  font-weight: 100;
@@ -468,8 +469,8 @@ h6{
 }
 
 p {
- line-height: 1.5em;
- margin-bottom: 1.7em;
+ line-height: 1.2em;
+ margin-bottom: 1.2em;
 }
 
 /* Text meant only for screen readers */
@@ -583,6 +584,16 @@ p {
 	clear:both;
 }
 
+.img-padd-lite{
+	margin-left: 3px;
+	margin-right:2px;
+}
+
+#mainFooterContainer{
+	min-height: 75px;
+	line-height:150%;
+}
+
 .ftrAck{
 	font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
 	font-size:0.8em;
@@ -590,6 +601,15 @@ p {
 	color:#FFFFFF;
 	padding-top: 20px;
 }
+
+.ftrAckNavy{
+	font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+	font-size:0.8em;
+	text-align:center;
+	color:#0D7E93;
+	padding-top: 20px;
+}
+
 /* ---------------------------------------------------------------------------Different Screen sizes ------------------------------------------------------------------------*/
 
 @media (min-width: 1220px) {

@@ -1,48 +1,102 @@
 /*  Content Page */
 
 .bg-content{
-	background: #F8821B url('../images/project_page.jpg') no-repeat scroll;
+	background: #edece5 url('../images/project.jpg') no-repeat scroll;
 	background-position: center top;
 	min-height:820px;
-}
-
-.homebtn {
-	width: 218px;
-	height: 55px;
-	margin-top: 259px;
-	display:block;
 }
 
 #contentHeader h1{
 	 margin:0;
 	 font-family: Helvetica, Arial, sans-serif;
 	 line-height: 120%;
-	 color: #999;
-	 font-size: 420%;
+	 color: #FFFFFF;
+	 font-size: 500%;
 	 font-weight: 600;
 }
 
-#ForProject a{
-	background: url('../images/forpro.jpg');
+#contentHeader{
+	padding-top:28px;
+	padding-left:10px;
+	min-height:92px;	
 }
 
-#ForProject a:hover{
-	background: url('../images/forpro-roll.jpg');
-}	
-
-#Partners a{
-	background: url('../images/partners-bot.jpg');
+#contentMain{
+	background-color: #edece5;
+	padding: 30px;
 }
 
-#Partners a:hover{
-	background: url('../images/partners-roll.jpg');
+#projectHeaderBg {
+	width: 648px;
+	height: 314px;
+	float: left;
+	background: url('../images/ph-backgroud.jpg');
+	background-repeat: no-repeat;
 }
 
-#RoadMap a{
-	background: url('../images/drivemap-bot.jpg');
+#contentAbstract{
+	min-height: 314px;
+	padding-left:10px;
 }
 
-#RoadMap a:hover{
-	background: url('../images/drivemap-bot-roll.jpg');
+#contentAbstract a{
+	display:block;
+	width: 271px;
+	height: 78px;
+	background-repeat: no-repeat;
 }
+
+.buttnAbstract{
+	width: 271px;
+	height: 78px;
+	background-repeat: no-repeat;
+}
+
+
+#projectLogoCong {
+	width: 50px;
+	height: 268px;
+	padding-top: 46px;
+	padding-left: 10px;
+	float: left;
+	background-color: #eae5e0;
+}
+
+
+#projectMenuSchool a {
+	background: url('../images/za-uchenici.jpg');
+}
+
+#projectMenuSchool a:hover {
+	background: url('../images/za-uchenici-roll.jpg');
+}
+
+#projectMenuStudent a{
+	background: url('../images/za-studenti.jpg');
+
+}
+
+#projectMenuStudent a:hover{
+	background: url('../images/za-studenti-roll.jpg');
+
+}
+
+#projectMenuPrepo a{
+	background: url('../images/za-prepodavateli.jpg');
+}
+
+#projectMenuPrepo a:hover{
+	background: url('../images/za-prepodavateli-roll.jpg');
+}
+
+#projectMenuBusiness a {
+	height: 80px;
+	background: url('../images/za-biznesa.jpg');
+}
+
+#projectMenuBusiness a:hover {
+	height: 80px;
+	background: url('../images/za-biznesa-roll.jpg');
+}
+
 /* Content Page END*/

@@ -10,7 +10,7 @@
  */
 ?>	
 			<div id="mainFooterContainer">
-						<div class="clr-both ftrAck">Viva Cognita е партньорски проект на Института по математика и информатика на БАН, Съюза на математиците в България и VIVACOM</div>
+						<div class="clr-both ftrAckNavy">Viva Cognita е партньорски проект на Института по математика и информатика на БАН, Съюза на математиците в България и VIVACOM</div>
 			</div> 
 		
 		
