@@ -71,7 +71,7 @@
 	<header>
 	 
 		<div id="mainHeadContainer">
-			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_header.png" alt="Logo Viva Cognita" </div>
+			<div class="logo"><a href="<?php echo get_bloginfo('home'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_header.png" alt="Logo Viva Cognita"></a></div>
 			<div id="hdrRight" class="flt-right">
 				<div id="mnuTop" class="mnuTop">
 					<ul>

@@ -16,10 +16,10 @@ get_header(); ?>
          <div id="mainContentContainer" class="bg-content">
         
 			<div id="sheet">
-			
+				
 				<div id="contentHeader">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
-					<h1>За проекта</h1>
+					<h1> <?php wp_title(''); ?> </h1>
 				</div>	
 	
 				<div id="contentAbstract">
@@ -42,31 +42,22 @@ get_header(); ?>
 				</div>	
 
 				<div id="contentMain">
-									<?php
 
-									// The Query
-									$thePage="page_id=".get_the_ID();
-									$the_query = new WP_Query( $thePage );
+					<?php 
+					// The Query	
+					$thePage="page_id=".get_the_ID();
+					$the_query = new WP_Query( $thePage );
 
-									// The Loop
-									if ( $the_query->have_posts() ) {
-										while ( $the_query->have_posts() ) {
-											$the_query->the_post();
-											echo '<div>' . get_the_content() . '</div>';
-										}				
-									} else {
-										echo 'Няма открито съдържание';
-									}
-									/* Restore original Post Data */
-									wp_reset_postdata();
-									
-									php?>
-				</div>
-
-				<div id="contentFooter">
-					
-				</div>								
+					if ( $the_query->have_posts() ) {
+							$the_query->the_post();
+							echo '<div>' . get_the_content() . '</div>';
+					} else {
+							echo 'Няма открито съдържание';
+					}
+					/* Restore original Post Data */
+					wp_reset_postdata();
+					?>
+				</div>					
 				
 			</div>
- <?php 
- get_footer(); ?>
+ <?php get_footer(); ?>

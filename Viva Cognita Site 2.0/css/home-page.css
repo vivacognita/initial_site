@@ -1,0 +1,111 @@
+/*  Home Page */
+
+.bg-home{
+	background: #F8821B url('../images/page.jpg') no-repeat scroll;
+	background-position: center top;
+	min-height:820px;
+}
+
+.home-col-1-1{
+	background: url('../images/main-section-4.jpg');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+.home-col-2-1{
+	background: url('../images/VC_cognita_konkursi_14.png');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+.home-col-3-1{
+	background: url('../images/main-section-6.jpg');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+.home-col-1-2{
+	background: url('../images/53f64.jpg');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+.home-col-2-2{
+	background: url('../images/roadmap_sq.jpg');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+.home-col-3-2{
+	background: url('../images/main-section-3.jpg');
+	background-repeat: no-repeat;
+	width:314px;
+	height:314px;
+	display:block;
+	margin-left:18px;
+}
+
+div#grid{
+	text-align:center;
+}
+
+div#SecondRow{
+	clear:both;
+	padding-top:18px;
+	padding-left: 1px;
+	min-height:314px;
+}
+
+div#FirstRow{
+	clear:both;
+	padding-top:60px;
+	padding-left: 1px;
+	min-height:314px;
+}
+
+.homebtn {
+	width: 218px;
+	height: 55px;
+	margin-top: 259px;
+	display:block;
+}
+
+#ForProject a{
+	background: url('../images/forpro.jpg');
+}
+
+#ForProject a:hover{
+	background: url('../images/forpro-roll.jpg');
+}	
+
+#Partners a{
+	background: url('../images/partners-bot.jpg');
+}
+
+#Partners a:hover{
+	background: url('../images/partners-roll.jpg');
+}
+
+#RoadMap a{
+	background: url('../images/drivemap-bot.jpg');
+}
+
+#RoadMap a:hover{
+	background: url('../images/drivemap-bot-roll.jpg');
+}
+/* Home Page END*/
