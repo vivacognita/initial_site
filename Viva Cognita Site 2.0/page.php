@@ -20,7 +20,11 @@ get_header(); ?>
 			
 				<div id="contentHeader">
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<img src="<?php echo get_template_directory_uri(); ?>/images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
+=======
+					<img src="images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
+>>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a
 =======
 					<img src="images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
 >>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a
@@ -31,7 +35,11 @@ get_header(); ?>
 						<div id="projectHeaderBg"> </div>
 							<div id="projectLogoCong">
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<img alt="" src="<?php echo get_template_directory_uri(); ?>/images/vivacong-ver.png">
+=======
+								<img alt="" src="images/vivacong-ver.png">
+>>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a
 =======
 								<img alt="" src="images/vivacong-ver.png">
 >>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a

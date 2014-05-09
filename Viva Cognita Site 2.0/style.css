@@ -1,0 +1,753 @@
+/*
+
+Theme Name: Viva Cognita
+
+Theme URI: http://www.math.bas.bg
+
+Author: Todor Branzov
+
+Author URI: http://vedena.net
+
+Description: Theme for Viva Cognita virtual community site
+
+Version: 2.0
+
+Tags:virtual community, mathematics, informatics, computer science, IT
+
+*/
+
+/* `XHTML, HTML4, HTML5 Reset
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+ font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+ font-size: 0.9em;
+ color: #333;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block;
+}
+
+b,
+strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+/*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+/*
+  For IE6 + IE7:
+
+  "display: list-item" keeps bullets from
+  disappearing if hasLayout is triggered.
+*/
+  display: list-item;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg {
+/*
+  For IE9. Without, occasionally draws shapes
+  outside the boundaries of <svg> rectangle.
+*/
+  overflow: hidden;
+}
+
+/*-------------------------------------------------------------------------- STANDARD STYLING ---------------------------------------------------------*/
+
+header{
+
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height:64px;
+    position: relative;
+    background-image: url('images/header.jpg');
+    background-position: center top;
+
+}
+
+div.logo{
+    width:200px;
+    float: left;
+	line-height:64px;
+	margin-left:10px;
+}
+
+/* Main Menu*/
+#mainNav ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mainNav li
+{
+    position: relative;
+    z-index: 5;
+    display: block;
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#mainNav a{
+    display: block;
+    text-align: left;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin: 0 auto;
+    padding: 0 17px;
+    color: #FFFFFF;
+    line-height: 34px;
+}
+
+#mainNav a:hover
+{
+    background-color: #FA681E;
+    color: #FFF5F0;
+}
+
+/* Main Menu END*/
+
+div#hdrRight{
+	min-width:327px;
+}
+
+/* Social Menu*/
+div .mnuTopSoc
+{
+	margin:0;
+	padding:0;
+	display:block;
+	height: 64px;
+}
+
+#mnuTopSoc ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display:block;
+}
+
+#mnuTopSoc li
+{
+	display: block;   
+	background: none;
+	width: 66px;
+	height: 64px;
+	float: left;
+}
+
+#mnuTopSoc a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    margin: 0 auto;
+}
+
+#mnuTopSoc a:hover
+{
+    background-color: #FFFFFF;
+}
+
+/* Social Menu END*/
+
+/* Top Menu*/
+ div .mnuTop
+{
+	margin:0;
+	padding:0;
+	display:block;
+	float:left;
+}
+
+#mnuTop ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display: inline-block;
+}
+
+#mnuTop li
+{
+	display: block;   
+	background: none;
+	line-height: 60px;
+	float: left;
+}
+
+#mnuTop a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    text-transform:uppercase;
+	color: #0D7E93;
+	padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+#mnuTop a:hover
+{
+	color: #FA681E;
+} */
+
+/* Top Menu END*/
+
+
+/*-----------------------------------------------------------------------------------TYPOGRAPHY ----------------------------------------------------------------------------------*/
+
+/*
+
+Set font stacks here
+
+Assign default colors only. Otherwise color is handled at BOTTOM of sheet.
+
+*/
+
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 100;
+ margin: 20px 0 10px 0;
+}
+
+h1, h3, h5{
+ font-family: Helvetica, Arial, sans-serif;
+ line-height: 120%;
+ color: #666;
+}
+
+h2, h4, h6{
+ font-family: 'Helvetica Neue', Helvetica, 'Arial Condensed', Arial, sans-serif;
+ line-height: 110%;
+ color: #999;
+}
+
+a {
+ font-family: Helvetica, Arial, sans-serif;
+ font-size: 100%;
+ color: #666;
+ font-weight: 100;
+ text-decoration: none;
+}
+
+pre, code{
+ font-family: Courier, monospace;
+ font-size: 100%;
+ margin-bottom:10px;
+}
+
+h1 {
+ font-size: 280%;
+ font-weight: 600;
+}
+
+h2 {
+ font-size: 220%;
+ border-bottom: 1px solid #ccc;
+ padding-bottom: 10px;
+}
+
+h3 {
+ font-size: 180%;
+}
+
+h4{
+ font-size: 200%;
+ color: #999
+}
+
+h5{
+ font-size: 115%;
+}
+
+h6{
+ font-size: 100%;
+}
+
+p {
+ line-height: 1.2em;
+ margin-bottom: 1.2em;
+}
+
+/* Text meant only for screen readers */
+
+.screen-text{
+ position: absolute;
+ left: -5000em;
+}
+
+
+/*--------------------------------------------------------------------------------------REUSABLE GRAPHIC TREATMENTS ----------------------------------------------------------------------*/
+
+/*main background colorscheme*/
+
+
+
+.bg-secondary{
+  background-color: #666;
+}
+
+.bg-tertiary{
+  background-color: #999;
+}
+
+.bg-light1{
+  background-color: #eee;
+}
+
+.bg-light2{
+  background-color: #ddd;
+}
+
+.bg-dark1{
+  background-color: #000;
+}
+
+.bg-dark2{
+  background-color: #444;
+}
+
+/*borders*/
+
+.bdr{
+  border: 1px solid;
+}
+
+ /*apply thickness*/
+
+.bdr-2px{
+  border: 2px solid #a28d7d;
+}
+
+ /*pick a side*/
+
+.bdr-top{
+  border-left:none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bdr-left{
+  border-top:none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bdr-right{
+  border-left:none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.bdr-left-right{
+  border-top: none;
+  border-bottom: none;
+}
+
+.bdr-bottom{
+  border-left:none;
+  border-right: none;
+  border-top: none;
+}
+
+ /*leverage selectors for border colors
+
+ -be sure to apply your rules in this order*/
+
+.bg-main.bdr{
+  border-color: #aaa;
+}
+
+.bg-secondary.bdr{
+  border-color: #999;
+}
+
+.bg-tertiary.bdr{
+  border-color: #eee;
+}
+
+/* Floats */
+
+.flt-right {
+	float:right;
+}
+
+.flt-left {
+	float:left;
+}
+
+.clr-both{
+	clear:both;
+}
+
+.img-padd-lite{
+	margin-left: 3px;
+	margin-right:2px;
+}
+
+#mainFooterContainer{
+	min-height: 75px;
+	line-height:150%;
+}
+
+.ftrAck{
+	font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+	font-size:0.8em;
+	text-align:center;
+	color:#FFFFFF;
+	padding-top: 20px;
+}
+
+.ftrAckNavy{
+	font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+	font-size:0.8em;
+	text-align:center;
+	color:#0D7E93;
+	padding-top: 20px;
+}
+
+/* ---------------------------------------------------------------------------Different Screen sizes ------------------------------------------------------------------------*/
+
+@media (min-width: 1220px) {
+
+	#mainHeadContainer{
+	margin: 0 auto;
+	width: 1000px;
+	height: 64px;
+	}
+  
+	#mainNavContainer{
+		width: 100%;
+		background: #0D7E93;
+		/* border-bottom: 1px dotted #A3B4C8; */
+		margin: 0 auto;
+	}
+	
+	#mainNav{
+	width: 1000px;
+	background: #0D7E93;
+	margin: 0 auto;
+	position: relative;
+	z-index: 499;
+	}
+
+	div#sheet, div#grid, div#mainFooterContainer {
+	margin: 0 auto;
+	position: relative;
+	width:1000px;
+}
+
+}
+
+@media (max-width: 1024px) {
+
+  #mainNav{
+   position:absolute;
+   top: 110px;
+   width: 950px;
+   }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 800px) {
+
+    header{
+     height: 100px;
+     }
+
+     #mainNav{
+      top:100px;
+      width: 300px;
+     }
+
+     #mainNav li{
+       float:none;
+       clear:both;
+     }
+
+     #container2{
+       background-position: 70% -90px;
+     }
+
+     .home article.post h2{
+        font-size: 150%;
+        margin-bottom: 10px;
+     }
+
+     .home article.post .entry-content,article.post .entry-meta, article.post a.more{
+        display:none;
+     }
+
+     .content.left.two-thirds, .sidebar.right.third{
+        float:none;
+        clear:both;
+        margin: 0 auto;
+        width:98%;
+     }
+
+     .sidebar div{
+       width: 30%;
+       margin: 1.2%;
+       float:left;
+     }
+
+     .home .content.left.two-thirds{
+        margin-top:180px;
+     }
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+      header{
+       height: 70px;
+       }
+
+     #mainNav{
+       top:70px;
+       width: 220px;
+     }
+
+     #mainNav li{
+       float:none;
+       clear:both;
+     }
+
+     #mainNav li a{
+       font-size: 100%;
+       padding: 10px
+     }
+
+     .home article.post h2{
+       font-size: 120%;
+       margin-bottom: 10px;
+       padding-left: 50px;
+     }
+
+     .home article.post .entry-content,article.post .entry-meta, article.post a.more{
+     display:none;
+     }
+
+     .home article.post a.comments{
+     position:absolute;
+     margin-top: -55px;
+     }
+
+     .content.left.two-thirds{
+     margin-top:150px;
+     }
+
+     .soc {
+     text-indent: -5000em;
+     }
+
+}
