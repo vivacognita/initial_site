@@ -21,14 +21,14 @@ get_header(); ?>
 				<div id="grid">
 					
 					<div id="FirstRow">
-						<div class="flt-left home-col-1-1"><div id="ForProject"><a href="#forpoject" class="homebtn"></a></div></div>
+						<div class="flt-left home-col-1-1"><div id="ForProject"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=129" class="homebtn"></a></div></div>
 						<div class="flt-left home-col-2-1"></div>
-						<div class="flt-left home-col-3-1"><div id="Partners"><a href="#fpartners" class="homebtn"></a></div></div>
+						<div class="flt-left home-col-3-1"><div id="Partners"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=127" class="homebtn"></a></div></div>
 					</div>
 					
 					<div id="SecondRow">
 						<div class="flt-left home-col-1-2"></div>
-						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="#roadmap" class="homebtn"></a></div></div>
+						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
 						<div class="flt-left home-col-3-2"></div>				
 					</div>
 					
