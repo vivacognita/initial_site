@@ -46,8 +46,11 @@
 				?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link media="all" rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-	<?php if ( is_front_page() ) { ?>
-				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/home-page.css" />	
+	<?php if ( is_front_page ( ) ) { ?>
+				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/home-page.css" />
+	<?php } ?> 
+	<?php if ( is_page ( array(129,223,225, 228,231) )  ) {?>
+				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/content-page.css" />	
 	<?php } ?> 
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<!--[if IE]>
@@ -68,7 +71,7 @@
 	<header>
 	 
 		<div id="mainHeadContainer">
-			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_header.png" alt="Logo Viva Cognita" alt="Logo Viva Cognita"></div>
+			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_header.png" alt="Logo Viva Cognita" </div>
 			<div id="hdrRight" class="flt-right">
 				<div id="mnuTop" class="mnuTop">
 					<ul>
@@ -77,9 +80,9 @@
 				</div>
 				<div id="mnuTopSoc" class="mnuTopSoc"> 
 					<ul>
-						<li class="bdr-2px bdr-left-right"><a href="#FB"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-bot.png" alt="Viva Cognita at Facebook" width="66" height="64" border="0" /></a></li>
-						<li class="bdr-2px bdr-right"><a href="#TW"><img src="<?php echo get_template_directory_uri(); ?>/images/tweet-bot.png" alt="Viva Cognita at Tweeter" width="66" height="64" border="0" /></a></li>
-						<li class="bdr-2px bdr-right"><a href="#YouTube"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-bot.png" alt="Viva Cognita at YouTube" width="66" height="64" border="0" /></a></li>
+						<li class="bdr-2px bdr-left-right"><a href="https://www.facebook.com/vivacognita" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-bot.png" alt="Viva Cognita at Facebook" width="66" height="64" border="0" /></a></li>
+						<li class="bdr-2px bdr-right"><a href="https://twitter.com/vivacognita" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/tweet-bot.png" alt="Viva Cognita at Tweeter" width="66" height="64" border="0" /></a></li>
+						<li class="bdr-2px bdr-right"><a href="https://www.youtube.com/user/vivacognita" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-bot.png" alt="Viva Cognita at YouTube" width="66" height="64" border="0" /></a></li>
 					</ul>  					
 				</div>
 			</div>
@@ -89,8 +92,8 @@
 	<div id="mainNavContainer">
 		<div id="mainNav">
 			<ul>
-				<li><a href="#home">Начало</a></li>
-				<li><a href="content.html">За проекта</a></li>
+				<li><a href="<?php echo get_bloginfo('url'); ?>">Начало</a></li>
+				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=129">За проекта</a></li>
 				<li><a href="#contact">Пътна карта</a></li>
 				<li><a href="#about">Партньори</a></li>
 			</ul>    

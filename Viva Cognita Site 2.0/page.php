@@ -1,74 +1,40 @@
-<!DOCTYPE html>
-<html lang="bg-BG" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
-	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/content-page.css" />
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	<!--
-	<meta name="viewport" content="width=device-width">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
-	-->
-  </head>
-  <body>
+<?php
+/**
+ *  Default Page Template
+ *
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ * @package WordPress
+ * @subpackage Viva Cognita
+ * @since Viva Cognita 2.0
+ */
 
-  <div id="container">
-
-	<header>
-	 
-		<div id="mainHeadContainer">
-			<div class="logo"><img src="images/logo_header.png" alt="Logo Viva Cognita" ></div>
-			<div id="hdrRight" class="flt-right">
-				<div id="mnuTop" class="mnuTop">
-					<ul>
-						<li><a href="#Contacts">Контакти</a></li>
-					</ul>  				
-				</div>
-				<div id="mnuTopSoc" class="mnuTopSoc"> 
-					<ul>
-						<li class="bdr-2px bdr-left-right"><a href="#FB"><img src="images/fb-bot.png" alt="Viva Cognita at Facebook" width="66" height="64" border="0" /></a></li>
-						<li class="bdr-2px bdr-right"><a href="#TW"><img src="images/tweet-bot.png" alt="Viva Cognita at Tweeter" width="66" height="64" border="0" /></a></li>
-						<li class="bdr-2px bdr-right"><a href="#YouTube"><img src="images/youtube-bot.png" alt="Viva Cognita at YouTube" width="66" height="64" border="0" /></a></li>
-					</ul>  					
-				</div>
-			</div>
-		</div>          
-	</header><!--//header-->
-	  
-	<div id="mainNavContainer">
-		<div id="mainNav">
-			<ul>
-				<li><a href="#home">Начало</a></li>
-				<li><a href="#news">За проекта</a></li>
-				<li><a href="#contact">Пътна карта</a></li>
-				<li><a href="#about">Партньори</a></li>
-			</ul>    
-		</div>
-	</div>
+get_header(); ?>
 
 
         <!-- Begin #container2 this holds the content and sidebars-->
         
-        <div id="mainContentContainer" class="bg-content">
+         <div id="mainContentContainer" class="bg-content">
         
 			<div id="sheet">
 			
 				<div id="contentHeader">
+<<<<<<< HEAD
+					<img src="<?php echo get_template_directory_uri(); ?>/images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
+=======
 					<img src="images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
+>>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a
 					<h1>За проекта</h1>
 				</div>	
 	
 				<div id="contentAbstract">
 						<div id="projectHeaderBg"> </div>
 							<div id="projectLogoCong">
+<<<<<<< HEAD
+								<img alt="" src="<?php echo get_template_directory_uri(); ?>/images/vivacong-ver.png">
+=======
 								<img alt="" src="images/vivacong-ver.png">
+>>>>>>> 40dc5e5838b71371763e4c659ede1b1f0a82042a
 							</div>
 						<div id="projectMenuSchool" class="buttnAbstract flt-left">
 							<a href="http://vivacognita.org/?page_id=223"></a>
@@ -106,11 +72,5 @@
 				</div>								
 				
 			</div>
-  
-			<div id="mainFooterContainer">
-				<div class="clr-both ftrAckNavy">Viva Cognita е партньорски проект на Института по математика и информатика на БАН, Съюза на математиците в България и VIVACOM</div>
-			</div> 
-
-		</div>	
-  </body>
-</html>
+ <?php 
+ get_footer(); ?>
