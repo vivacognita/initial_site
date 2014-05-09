@@ -50,7 +50,7 @@ get_header(); ?>
 
 					if ( $the_query->have_posts() ) {
 							$the_query->the_post();
-							echo '<div>' . get_the_content() . '</div>';
+							echo '<div>' . the_content() . '</div>';
 					} else {
 							echo 'Няма открито съдържание';
 					}

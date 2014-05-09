@@ -49,7 +49,7 @@
 	<?php if ( is_front_page ( ) ) { ?>
 				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/home-page.css" />
 	<?php } ?> 
-	<?php if ( is_page ( array(129,223,225, 228,231) )  ) {?>
+	<?php if ( is_page ( array(129,223,225, 228,231,125,127, 202) )  ) {?>
 				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/content-page.css" />	
 	<?php } ?> 
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -75,7 +75,7 @@
 			<div id="hdrRight" class="flt-right">
 				<div id="mnuTop" class="mnuTop">
 					<ul>
-						<li><a href="#Contacts">Контакти</a></li>
+						<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=202">Контакти</a></li>
 					</ul>  				
 				</div>
 				<div id="mnuTopSoc" class="mnuTopSoc"> 
@@ -94,8 +94,8 @@
 			<ul>
 				<li><a href="<?php echo get_bloginfo('url'); ?>">Начало</a></li>
 				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=129">За проекта</a></li>
-				<li><a href="#contact">Пътна карта</a></li>
-				<li><a href="#about">Партньори</a></li>
+				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125">Пътна карта</a></li>
+				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=127">Партньори</a></li>
 			</ul>    
 		</div>
 	</div>
