@@ -9,7 +9,7 @@
 #contentHeader h1{
 	 margin:0;
 	 font-family: Helvetica, Arial, sans-serif;
-	 line-height: 120%;
+	 line-height: 115%;
 	 color: #FFFFFF;
 	 font-size: 500%;
 	 font-weight: 600;
@@ -21,11 +21,31 @@
 	min-height:92px;	
 }
 
-#contentMain{
-	background-color: #edece5;
-	padding: 30px;
+.singlearticle {
+  position: relative;
+  width: 93%;
+  padding: 2em 1.5em;
+  margin: 0 auto;
+  color: #333;
+  background: #f5f5f5;
+  overflow: hidden;
 }
 
+.singlearticle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 22px 22px 0;
+  border-style: solid;
+  border-color: #edece5 #edece5 #b8b8b8 #b8b8b8;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  /* Firefox 3.0 damage limitation */
+  display: block; width: 0;
+}
 #projectHeaderBg {
 	width: 648px;
 	height: 314px;

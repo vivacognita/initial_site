@@ -41,7 +41,7 @@ get_header(); ?>
 					</div>
 				</div>	
 
-				<div id="contentMain">
+				<div id="contentMain" class="singlearticle">
 
 					<?php 
 					// The Query	

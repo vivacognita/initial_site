@@ -29,7 +29,7 @@ get_header(); ?>
 				</div>					
 				<?php }	?>		
 
-				<div id="contentMain">
+				<div id="contentMain" class="singlearticle">
 					<?php 
 					// The Query	
 					$thePage="page_id=".get_the_ID();
