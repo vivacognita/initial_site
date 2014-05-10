@@ -120,7 +120,7 @@ body {
 }
 
 body {
- font-family: Tahoma, 'Tahoma Unicode MS', Helvetica, Sans-Serif;
+ font-family: 'Noto Sans', sans-serif;;
  font-size: 16px;
  color: #333;
  line-height: 150%;
@@ -306,7 +306,7 @@ div.logo{
 /* Main Menu END*/
 
 div#hdrRight{
-	min-width:327px;
+	min-width:410px;
 }
 
 /* Social Menu*/

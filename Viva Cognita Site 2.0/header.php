@@ -76,6 +76,7 @@
 				<div id="mnuTop" class="mnuTop">
 					<ul>
 						<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=202">Контакти</a></li>
+						<li><a href="<?php echo get_bloginfo('url'); ?>/wp-login.php">Вход</a></li>
 					</ul>  				
 				</div>
 				<div id="mnuTopSoc" class="mnuTopSoc"> 
