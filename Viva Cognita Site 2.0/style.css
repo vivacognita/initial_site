@@ -626,7 +626,7 @@ blockquote {
 
 /* ---------------------------------------------------------------------------Different Screen sizes ------------------------------------------------------------------------*/
 
-@media (min-width: 1024px) {
+@media (min-width: 10px) {
 
 	#mainHeadContainer{
 	margin: 0 auto;
@@ -657,6 +657,7 @@ blockquote {
 
 }
 
+/*
 
 @media (min-width: 480px) and (max-width: 800px) {
 
@@ -755,3 +756,4 @@ blockquote {
      }
 
 }
+*/
