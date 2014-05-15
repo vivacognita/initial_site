@@ -11,7 +11,6 @@
 	 font-family: Helvetica, Arial, sans-serif;
 	 line-height: 115%;
 	 color: #FFFFFF;
-	 font-size: 500%;
 	 font-weight: 600;
 }
 
@@ -21,11 +20,19 @@
 	min-height:92px;	
 }
 
+.singlepost{
+	font-size: 300%;
+}
+
+.singlepage{
+	font-size: 500%;
+}
+
 .singlearticle {
   position: relative;
   width: 93%;
   padding: 2em 1.5em;
-  margin: 0 auto;
+  margin: 10px auto;
   color: #333;
   background: #f5f5f5;
   overflow: hidden;
@@ -36,7 +43,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  border-width: 0 22px 22px 0;
+  border-width: 0 55px 55px 0;
   border-style: solid;
   border-color: #edece5 #edece5 #b8b8b8 #b8b8b8;
   background: #f5f5f5;
@@ -46,6 +53,30 @@
   /* Firefox 3.0 damage limitation */
   display: block; width: 0;
 }
+
+.articledetails{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 30px;
+	margin: 0 auto;
+	display: block;
+	background-color: #b8b8b8;
+	width: 100%;
+	line-height: 175%;
+}
+
+.artbit{
+ margin-top:2px;
+ margin-bottom:2px;
+ margin-left:3px;
+ margin-right:5px;
+}
+
+#contentList{
+ min-height:320px;
+}
+
 #projectHeaderBg {
 	width: 648px;
 	height: 314px;

@@ -20,7 +20,7 @@ get_header(); ?>
 			
 				<div id="contentHeader">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/buhal_png.png" width="78px" height="81px" alt="Бухал" class="flt-left img-padd-lite"/>
-					<h1> <?php wp_title(''); ?> </h1>
+					<h1 class="singlepage"> <?php wp_title(''); ?> </h1>
 				</div>
 
 				<?php if ( has_post_thumbnail() ) { ?>

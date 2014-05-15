@@ -47,7 +47,7 @@ get_header(); ?>
 							<div id="NewsContent" class="news_2layer">
 							<h2><?php the_title();?></h2>
 							<?php /* the_date('d-m-Y', '<div class="front_page_news_date"> Дата:', '</div>'); */?>
-							<div class="front_page_news_body"><?php the_content('<div class="front_page_more_text">Виж цялата новина...</div>'); ?> </div>
+							<div class="front_page_news_body"><?php the_excerpt(); ?><div class="front_page_more_text">Виж цялата новина...</a></div> </div>
 							<?php
 								} else {
 										echo 'Няма открито съдържание';

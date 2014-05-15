@@ -49,7 +49,7 @@
 	<?php if ( is_front_page ( ) ) { ?>
 				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/home-page.css" />
 	<?php } ?> 
-	<?php if ( is_page ( array(129,223,225, 228,231,125,127, 202) )  ) {?>
+	<?php if ( is_page ( array(129,223,225, 228,231,125,127, 202, 36) ) || is_single() ) {?>
 				<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/content-page.css" />	
 	<?php } ?> 
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -96,6 +96,7 @@
 				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=129">За проекта</a></li>
 				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125">Пътна карта</a></li>
 				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=127">Партньори</a></li>
+				<li><a href="<?php echo get_bloginfo('url'); ?>/?page_id=36">Новини</a></li>
 			</ul>    
 		</div>
 	</div>
