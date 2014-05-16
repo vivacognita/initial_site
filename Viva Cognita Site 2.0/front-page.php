@@ -27,7 +27,31 @@ get_header(); ?>
 					</div>
 					
 					<div id="SecondRow">
-						<div class="flt-left home-col-1-2"></div>
+						<div class="flt-left home-col-1-2">
+						<div class="frontpage-loginform">
+							<?php $args = array(
+								'echo'           => true,
+								'redirect'       => site_url( $_SERVER['REQUEST_URI'] ), 
+								'form_id'        => 'loginform',
+								'label_username' => __( 'Потребител' ),
+								'label_password' => __( 'Парола' ),
+								'label_remember' => __( 'Запомни ме за 14 дни.' ),
+								'label_log_in'   => __( 'Влез' ),
+								'id_username'    => 'user_login',
+								'id_password'    => 'user_pass',
+								'id_remember'    => 'rememberme',
+								'id_submit'      => 'wp-submit',
+								'remember'       => true,
+								'value_username' => NULL,
+								'value_remember' => false
+							); ?> 
+								<?php wp_login_form( $args );?>
+								<div id="RegLinks">
+									<a href="<?php echo wp_registration_url(); ?>" title="Register">Регистрация</a> | 
+									<a href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Забравена парола?</a>
+								</div>
+							</div>
+					</div>
 						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
 							<?php 
 								// The Query	

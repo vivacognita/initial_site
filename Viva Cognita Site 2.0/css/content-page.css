@@ -150,4 +150,13 @@
 	background: url('../images/za-biznesa-roll.jpg');
 }
 
+.wpcf7-text, .wpcf7-textarea{
+ width:100%;
+}
+
+.clionba {
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 40px;
+}
 /* Content Page END*/
