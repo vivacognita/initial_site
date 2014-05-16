@@ -51,3 +51,28 @@ function viva_cognita_setup() {
 	set_post_thumbnail_size( 995, 9999 ); // Unlimited height, soft crop
 }
 add_action( 'after_setup_theme', 'viva_cognita_setup' );
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
+            padding-bottom: 30px;
+			background-size: 200px 34px;
+			width:200px;
+			height:50px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'VIVA Cognita';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+?>

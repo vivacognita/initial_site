@@ -28,8 +28,8 @@ get_header(); ?>
 					
 					<div id="SecondRow">
 						<div class="flt-left home-col-1-2">
-						<div class="frontpage-loginform">
-							<?php $args = array(
+						<?php if ( ! is_user_logged_in() ) {
+								$args = array(
 								'echo'           => true,
 								'redirect'       => site_url( $_SERVER['REQUEST_URI'] ), 
 								'form_id'        => 'loginform',
@@ -44,14 +44,33 @@ get_header(); ?>
 								'remember'       => true,
 								'value_username' => NULL,
 								'value_remember' => false
-							); ?> 
+								); ?>
+								<div class="frontpage-loginform">								
 								<?php wp_login_form( $args );?>
 								<div id="RegLinks">
 									<a href="<?php echo wp_registration_url(); ?>" title="Register">Регистрация</a> | 
 									<a href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Забравена парола?</a>
 								</div>
 							</div>
-					</div>
+							<?php
+							} else { 
+							// If logged in:
+								global $current_user;
+								  get_currentuserinfo();
+								  $user_meta = get_user_by( 'ID', $current_user->ID );
+							?>
+							<div class="frontpage-loginform">
+								<div class="profile-fp">Потребител <?php echo $current_user->user_login;?></div>
+								<div class="profile-fp">Име <?php echo $current_user->display_name;?></div>
+								<div class="profile-fp">E-mail <?php echo $current_user->user_email;?></div>
+								<div class="profile-fp">User ID <?php echo $current_user->ID;?></div>
+								<div id="RegLinks">
+									<?php wp_loginout( home_url() ); ?>
+									<?php wp_register('', ''); ?>
+								</div>							
+							<?php	}	?>
+							</div>
+						</div>
 						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
 							<?php 
 								// The Query	
