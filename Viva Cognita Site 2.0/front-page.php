@@ -51,7 +51,7 @@ get_header(); ?>
 									<a href="<?php echo wp_registration_url(); ?>" title="Register">Регистрация</a> | 
 									<a href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Забравена парола?</a>
 								</div>
-							</div>
+								</div>
 							<?php
 							} else { 
 							// If logged in:
@@ -67,9 +67,9 @@ get_header(); ?>
 								<div id="RegLinks">
 									<?php wp_loginout( home_url() ); ?>
 									<?php wp_register('', ''); ?>
-								</div>							
+								</div>	
+							</div>								
 							<?php	}	?>
-							</div>
 						</div>
 						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
 							<?php 
