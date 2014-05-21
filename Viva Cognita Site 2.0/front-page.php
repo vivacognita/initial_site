@@ -60,13 +60,17 @@ get_header(); ?>
 								  $user_meta = get_user_by( 'ID', $current_user->ID );
 							?>
 							<div class="frontpage-loginform">
-								<div class="profile-fp">Потребител <?php echo $current_user->user_login;?></div>
-								<div class="profile-fp">Име <?php echo $current_user->display_name;?></div>
-								<div class="profile-fp">E-mail <?php echo $current_user->user_email;?></div>
-								<div class="profile-fp">User ID <?php echo $current_user->ID;?></div>
+								<div id="hdrProfile">
+								<div class="profile-fp flt-left"><?php echo get_avatar( $current_user->ID, 64 );?></div>
+								<div class="profile-fp"><h3><?php echo $current_user->display_name;?></h3></div>
+								</div>
+								<div id="mainProfile" class="mainProfile">
+								<div class="profile-fp">Потребител: <?php echo $current_user->user_login;?></div>
+								<div class="profile-fp">E-mail: <?php echo $current_user->user_email;?></div>
+								<div class="profile-fp">User ID: <?php echo $current_user->ID;?></div>
+								</div>
 								<div id="RegLinks">
-									<?php wp_loginout( home_url() ); ?>
-									<?php wp_register('', ''); ?>
+									<?php wp_loginout( home_url() ); ?> | <?php wp_register('', ''); ?>
 								</div>	
 							</div>								
 							<?php	}	?>

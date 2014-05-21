@@ -121,6 +121,9 @@ h2 {
 	 text-align: left;
 }
 
+h3 {
+	 color: #FFFFFF;
+}
 .front_page_news_body{
 	 text-align: justify;
 	 padding: 24px;
@@ -243,5 +246,21 @@ margin-right:50px;
 }
 .frontpage-loginform a:hover{
 	color:#2C82C9;
+}
+
+.profile-fp{
+	margin-right:20px;
+	color:#FFFFFF;
+}
+
+.mainProfile{
+	 text-align: justify;
+	 margin-top:10px;
+	 min-height:200px;
+	 margin-left:20px;
+}
+
+#hdrProfile{
+min-height:80px;
 }
 /* Home Page END*/
