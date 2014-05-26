@@ -1,7 +1,7 @@
 /*  Home Page */
 
 .bg-home{
-	background: #F8821B url('../images/page.jpg') no-repeat scroll;
+	background: #F8821B url('../images/page.jpg') scroll;
 	background-position: center top;
 	min-height:820px;
 }
@@ -16,8 +16,6 @@
 }
 
 .home-col-2-1{
-	background: url('../images/VC_cognita_konkursi_14.png');
-	background-repeat: no-repeat;
 	width:314px;
 	height:314px;
 	display:block;
@@ -53,6 +51,8 @@
 }
 
 .home-col-3-2{
+	background: url('../images/wysteria.png');
+	background-repeat: no-repeat;
 	width:314px;
 	height:314px;
 	display:block;
@@ -77,6 +77,25 @@ div#FirstRow{
 	min-height:314px;
 }
 
+div#ThirdRow{
+	clear:both;
+	padding-top:20px;
+	padding-left: 1px;
+	min-height:314px;
+}
+div#Competition{
+	background-color: #F1C40F;
+	margin-left:17px;
+	margin-right:3px;
+	min-height:314px;
+}
+
+div#thmbCompetition{
+	width:314px;
+	height:314px;
+	background: url('../images/VC_cognita_konkursi_14.png');
+	background-repeat: no-repeat;
+}
 .homebtn {
 	width: 218px;
 	height: 55px;
@@ -108,9 +127,17 @@ div#FirstRow{
 	background: url('../images/drivemap-bot-roll.jpg');
 }
 
+#fpSubscription a{
+	background: url('../images/btn-mailing.png');
+}
+
+#fpSubscription a:hover{
+	background: url('../images/btn-mailing.png');
+}	
+
 h2 {
 	 font-weight: 100;
-	 margin: 15px 0 5px 0;
+	 margin: 15px 10px 5px 0;
 	  font-family: 'Helvetica Neue', Helvetica, 'Arial Condensed', Arial, sans-serif;
 	 line-height: 100%;
 	 color: #FFFFFF;
@@ -123,6 +150,34 @@ h2 {
 
 h3 {
 	 color: #FFFFFF;
+}
+
+#cntCompetition h2{
+	 text-align: center;
+	 padding-top:10px;
+	 margin: 0 10px 5px 0;
+	 font-size: 2.0em;
+}
+
+#cntCompetition p{
+	 color: #FFFFFF;
+}
+
+#cntCompetition a{
+	 color: #FFFFFF;
+	 text-decoration: overline;
+}
+
+#cntCompetition a:hover{
+	 color:#f39c12;
+	 text-decoration: overline;
+}
+
+
+.brdrBtmDashed{
+border-bottom-color: #FFFFFF;
+border-bottom: 4px dashed;
+line-height: 280%;
 }
 .front_page_news_body{
 	 text-align: justify;

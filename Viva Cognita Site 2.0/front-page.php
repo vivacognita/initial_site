@@ -22,7 +22,36 @@ get_header(); ?>
 					
 					<div id="FirstRow">
 						<div class="flt-left home-col-1-1"><div id="ForProject"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=129" class="homebtn"></a></div></div>
-						<div class="flt-left home-col-2-1"></div>
+													<?php 
+								// The Query	
+								$thePage="cat=5";
+								$the_query = new WP_Query ($thePage);
+								if ( $the_query->have_posts() ) {
+										$the_query->the_post();
+										global $more; 
+										$more = 0;
+										$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+										$thumb_url = $thumb['0'];
+										$news_permalink = get_permalink( $post->ID ); 
+							?>
+							<a href="<?php echo $news_permalink; ?>">
+						<div class="flt-left home-col-2-1">
+							<div id="NewsContainer"  style="background-image:url('<?php echo $thumb_url; ?>');">
+							<div id="NewsContent" class="news_2layer">
+							<h2><?php the_title();?></h2>
+							<?php /* the_date('d-m-Y', '<div class="front_page_news_date"> Дата:', '</div>'); */?>
+							<div class="front_page_news_body"><?php the_excerpt(); ?><div class="front_page_more_text">Виж цялата новина...</a></div> </div>
+							<?php
+								} else {
+										echo 'Няма открито съдържание';
+								}
+								/* Restore original Post Data */
+								wp_reset_postdata();
+							?>
+							</div>
+							</div>
+							</a>
+						</div>				
 						<div class="flt-left home-col-3-1"><div id="Partners"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=127" class="homebtn"></a></div></div>
 					</div>
 					
@@ -76,38 +105,22 @@ get_header(); ?>
 							<?php	}	?>
 						</div>
 						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
-							<?php 
-								// The Query	
-								$thePage="cat=5";
-								$the_query = new WP_Query ($thePage);
-								if ( $the_query->have_posts() ) {
-										$the_query->the_post();
-										global $more; 
-										$more = 0;
-										$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-										$thumb_url = $thumb['0'];
-										$news_permalink = get_permalink( $post->ID ); 
-							?>
-							<a href="<?php echo $news_permalink; ?>">
-						<div class="flt-left home-col-3-2">
-							<div id="NewsContainer"  style="background-image:url('<?php echo $thumb_url; ?>');">
-							<div id="NewsContent" class="news_2layer">
-							<h2><?php the_title();?></h2>
-							<?php /* the_date('d-m-Y', '<div class="front_page_news_date"> Дата:', '</div>'); */?>
-							<div class="front_page_news_body"><?php the_excerpt(); ?><div class="front_page_more_text">Виж цялата новина...</a></div> </div>
-							<?php
-								} else {
-										echo 'Няма открито съдържание';
-								}
-								/* Restore original Post Data */
-								wp_reset_postdata();
-							?>
-							</div>
-							</div>
-							</a>
-						</div>				
+						<div class="flt-left home-col-3-2"><div id="fpSubscription"><a href="http://213.191.194.13/forms/view.php?id=12942" onclick="window.open(this.href,  null, 'height=750, width=800, toolbar=0, location=0, status=0, scrollbars=1, resizable=1'); return false;" class="homebtn"></a></div></div>
 					</div>
-					
+				
+					<div id="ThirdRow">
+						<div id="Competition">
+							<div id="thmbCompetition" class="flt-left"></div>
+							<div id="cntCompetition">
+								<h2>Конкурс за талисман на VIVA Cognita</h2>
+								<p class="brdrBtmDashed">Внимание! Внимание! Внимание!</p> 
+								<p>Математическият бухал излиза в отпуска. Търси се заместник!</p>
+								<p>Нарисувай и предложи талисман на VIVA Cognita и спечели интересни награди!</p>
+								<p>За да участваш е необходимо да можеш да рисуваш, като използваш средства за компютърна графика.</p>
+								<a href="http://213.191.194.13/forms/view.php?id=11234" target="_blank" title="Конкурс за талисман на VIVA Cognita">Виж подробности и участвай тук</a>
+							</div>
+						</div>
+					</div>
 				</div>	
 			
 			</div>
