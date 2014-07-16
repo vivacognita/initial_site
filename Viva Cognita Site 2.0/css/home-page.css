@@ -32,7 +32,7 @@
 }
 
 .home-col-1-2{
-	background: url('../images/pictionblue.png');
+	background: url('../images/53f64.jpg');
 	background-repeat: no-repeat;
 	width:314px;
 	height:314px;
@@ -83,24 +83,23 @@ div#ThirdRow{
 	padding-left: 1px;
 	min-height:314px;
 }
+
 div#Competition{
-	background-color: #F1C40F;
 	margin-left:17px;
 	margin-right:3px;
 	min-height:314px;
 }
 
-div#thmbCompetition{
-	width:314px;
-	height:314px;
-	background: url('../images/VC_cognita_konkursi_14.png');
-	background-repeat: no-repeat;
-}
 .homebtn {
 	width: 218px;
 	height: 55px;
 	margin-top: 259px;
 	display:block;
+		-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-ms-transition: background 0.2s;
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
 }
 
 #ForProject a{
@@ -128,11 +127,11 @@ div#thmbCompetition{
 }
 
 #fpSubscription a{
-	background: url('../images/btn-mailing.png');
+	background: url('../images/btn-mailing.jpg');
 }
 
 #fpSubscription a:hover{
-	background: url('../images/btn-mailing.png');
+	background: url('../images/btn-mailing-k.jpg');
 }	
 
 h2 {

@@ -105,19 +105,13 @@ get_header(); ?>
 							<?php	}	?>
 						</div>
 						<div class="flt-left home-col-2-2"><div id="RoadMap"><a href="<?php echo get_bloginfo('url'); ?>/?page_id=125" class="homebtn"></a></div></div>
-						<div class="flt-left home-col-3-2"><div id="fpSubscription"><a href="<?php echo get_bloginfo('url'); ?>/forms/view.php?id=12942" onclick="window.open(this.href,  null, 'height=750, width=800, toolbar=0, location=0, status=0, scrollbars=1, resizable=1'); return false;" class="homebtn"></a></div></div>
+						<div class="flt-left home-col-3-2"><div id="fpSubscription"><a href="http://213.191.194.13/forms/view.php?id=12942" onclick="window.open(this.href,  null, 'height=750, width=800, toolbar=0, location=0, status=0, scrollbars=1, resizable=1'); return false;" class="homebtn"></a></div></div>
 					</div>
 				
 					<div id="ThirdRow">
 						<div id="Competition">
-							<div id="thmbCompetition" class="flt-left"></div>
 							<div id="cntCompetition">
-								<h2>Конкурс за талисман на VIVA Cognita</h2>
-								<p class="brdrBtmDashed">Внимание! Внимание! Внимание!</p> 
-								<p>Математическият бухал излиза в отпуска. Търси се заместник!</p>
-								<p>Нарисувай и предложи талисман на VIVA Cognita и спечели интересни награди!</p>
-								<p>За да участваш е необходимо да можеш да рисуваш, като използваш средства за компютърна графика.</p>
-								<a href="http://<?php echo get_bloginfo('url'); ?>/forms/view.php?id=11234" target="_blank" title="Конкурс за талисман на VIVA Cognita">Виж подробности и участвай тук</a>
+								<a href="http://213.191.194.13/forms/view.php?id=11234" target="_blank" title="Конкурс за талисман на VIVA Cognita"><img src="<?php echo get_template_directory_uri();?>/images/mascot_competition_banner.png"></a>
 							</div>
 						</div>
 					</div>
